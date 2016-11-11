@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CB5C2F38-2ECC-4C0A-89E5-9C1C07667607}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Hangman.My.MyApplication</StartupObject>
+    <RootNamespace>Hangman</RootNamespace>
+    <AssemblyName>Hangman</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Hangman.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Hangman.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>MinistryOfAdmissionSeal.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ending.Designer.vb">
+      <DependentUpon>Ending.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ending.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Endless.Designer.vb">
+      <DependentUpon>Endless.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Endless.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.vb">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passport.Designer.vb">
+      <DependentUpon>Passport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Passport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Story.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Story.Designer.vb">
+      <DependentUpon>Story.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Ending.resx">
+      <DependentUpon>Ending.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Endless.resx">
+      <DependentUpon>Endless.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passport.resx">
+      <DependentUpon>Passport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Story.resx">
+      <DependentUpon>Story.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Resources\AGITPM__.TTF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiniInfo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Newspaper_Template.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MinistryOfAdmissionSeal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IndexSworl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiddleSworl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PinkySworl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RingSworl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThumbSworl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FingerPrintSheet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Death.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Victory.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Theme.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FFace1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FFace2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MFace1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MFace2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MFace3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MFace4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MFace5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MFace6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SheetF3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SheetF4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SheetF5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SheetF6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Newspaper_Template_Story.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Passporte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MinistryOfAdmissionSeal.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

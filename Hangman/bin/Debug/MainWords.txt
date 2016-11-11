@@ -1,0 +1,16 @@
+﻿murder
+attack
+control
+rebel
+dystopia
+terrorist
+collapse
+killings
+blackout
+censor
+riot
+citizen
+weapon
+disease
+death
+disaster
