@@ -1,5 +1,5 @@
 # Hangman
-A simple Hangman game in Visual Basic. With a GUI, but not to track the killer's IP address.
+A simple Hangman game in Visual Basic.
 
 ## Description
 It is a dark time in Gruschnacht history. The government, with complete control over the press, has decided to censor your daily morning newspaper. As an intrepid citizen, this cannot stand! There are also rumblings of a secret society dedicated to toppling those people who rule above you. Will you solve the mystery of the censored words? Whose side will you choose to be on? Make a statement - solve the censored words, and regain a little bit of your own personal liberty.
